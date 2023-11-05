@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Background Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide the default scrollbars */
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1; /* Place the video behind other elements */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        h1, p {
+            font-size: 36px;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+            border-radius: 10px; /* Rounded corners */
+            padding: 10px 20px;
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #3498db, #4ac29a);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #4ac29a, #3498db);
+        }
+
+        .download-btn {
+            background: #4ac29a; /* Change the background color */
+            border: none;
+            padding: 15px 25px; /* Increase padding for a larger button */
+            font-size: 18px; /* Increase font size */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="assests/BackgroundVideo.mp4" type="video/mp4" />
+    </video>
+
+    <div class="content">
+        <h1>SOON</h1>
+       
+</body>
+</html>

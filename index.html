@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS Launcher - The ultimate launcher for Minecraft</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide the default scrollbars */
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1; /* Place the video behind other elements */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        h1, p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+            border-radius: 10px; /* Rounded corners */
+            padding: 10px 20px;
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-image: linear-gradient(to right, #fffc00 0%, #ffffff  51%, #fffc00  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+        
+
+        .download-btn {
+            
+            background-image: linear-gradient(to right, #1c92d2 0%, #f2fcfe  51%, #1c92d2  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+        }
+                 
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 70%;
+
+}
+         
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="assests/BackgroundVideo.mp4" type="video/mp4" />
+    </video>
+    <img src="/assests/logo - Copy (3).png" alt="Paris" class="center">
+
+    <div class="content">
+        <h1>GS LAUNCHER BETA</h1>
+        <p>Ultimate Launcher For Your Journey</p>
+        <div class="btn-container">
+            <a href="/skin.html">
+            <button class="btn">Skin</button></a>
+            <a href="/download.html">
+            <button class="btn download-btn">Download</button></a>
+        </div>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js" integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO" crossorigin="anonymous"></script>
+</body>
+</html>
